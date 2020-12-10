@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="tam pt-5">
+    <div class="">
+        <h5 class="das text-center">ASSOCIATE </h5>
+    </div>
+    <div class="container pt-4 ">
+            <form name="myForm" class="" action="index.html" onsubmit="return false" method="post">
+                <div class="row ">
+                  <div class="col-sm-4 col-12 pt-4">
+                   <label for="fname">Company Name <span class="text-danger">*</span></label>
+                   <input type="text" class="form-control" id="first" placeholder="Company Name" name="cname">
+                   <span id="one" class="text-danger"></span>
+                  </div>
+                  <div class="col-sm-4 col-12  pt-4 ">
+                   <label for="fname">Company Display Name <span class="text-danger">*</span> </label>
+                   <input type="text" class="form-control" id="second" placeholder="Company Display Name" name="lname">
+                   <span id="two" class="text-danger"></span>
+                  </div>
+                    <div class="col-sm-4 col-12 pt-4 ">
+                      <label for="fname">Associate Type <span class="text-danger">*</span></label><br> 
+                      <select type="text" class="form-control "  placeholder="choose" id="Associate" name="Associate">
+                        <option value="">choose</option>
+                        <option value="CUSTOMER">CUSTOMER</option>
+                        <option value="SUBLAIER">SUBLAIER</option>
+                      </select>
+                      <span id="typErr" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-4 col-12 pt-4">
+                      <label for="fname">Address <span class="text-danger">*</span></label>
+                      <input type="text" class="gg form-control" id="third" placeholder="Address" name="email1">
+                      <span id="three" class="text-danger"></span>
+                     </div>
+                     <div class="col-sm-4 col-12 pt-4">
+                      <label for="fname">Country <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="fourth" placeholder="Country" name="click">
+                      <span id="four" class="text-danger"></span>
+                     </div>
+                     <div class="col-sm-4  col-12 pt-4 ">
+                        <label for="fname ">Status <span class="text-danger">*</span></label><br>
+                        <select type="text" class="form-control required"  placeholder="choose" id="status" name="status">
+                          <option value="">choose</option>
+                          <option value="ACTIVE">ACTIVE</option>
+                          <option value="UNACTVE">INACTVE</option>
+                        </select>
+                        <span id="statusErr" class="text-danger"></span>
+                      </div>
+                      <div class="col-sm-4 col-12 pt-4">
+                        <label for="fname">Website URL <span class="text-danger">*</span></label>
+                        <input type="text" class="gg form-control" id="fifth" placeholder="Website URL" name="email1">
+                        <span id="five" class="text-danger"></span>
+                       </div>
+                       <div class="col-sm-4 col-12 pt-4">
+                        <label for="fname">Remarks <span class="text-danger">*</span></label>
+                        <textarea type="text" class="form-control" id="sixth" placeholder="Remarks" name="click"></textarea>
+                        <span id="six" class="text-danger"></span>
+                       </div>
+                       <div class="col-sm-4 col-12 pt-4 offset-md-9 justify-content-end">
+                        <button type="submit"  class="btn btn-primary my-2 " onclick="gas()">Submit</button>
+                        <button type="reset" class="btn btn-danger my-2 mx-2">Cancel</button>
+                      </div>
+                </div>
+            </form>
+    </div>
+    <div class="container pt-5">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Company Name</th>
+            <th>Associate Type</th>
+            <th>Status</th>
+            <th>Edit/Delete</th>
+          </tr>
+        </thead>
+      <tr>
+        <tbody class="text-dark" id="body"></tbody>
+      </tr>
+      </table>
+    </div>
+  </div>
+    <script src="main.js"></script> 
+</body>
+</html>
